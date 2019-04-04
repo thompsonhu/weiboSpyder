@@ -19,7 +19,7 @@ Run the script by using command:
 
 After running the script, you will get the `usetinfo.txt` and `weiboContent.txt`.
 
-Enjoy your selenium and sina weibo now!
+Enjoy your selenium and sina weibo now!!!
 
 # Reference
 [weibospider](https://github.com/nangongtianyi/weibospider)
