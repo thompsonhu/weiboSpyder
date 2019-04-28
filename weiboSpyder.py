@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Apr 28 15:21:56 2019
+@author: Thompson
+"""
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
