@@ -84,6 +84,8 @@ def visitWeiboContent(userId):
                     break
                 
         iter1 = driver.find_elements_by_xpath('//div[@class="WB_detail"]')
+        if len(iter1) == 0:
+            break
         for i in range(0,len(iter1)):
             pretime1 = iter1[i].find_element_by_xpath('div[@class="WB_from S_txt2"]/a[1]').text
             pretime.append(pretime1)
@@ -97,7 +99,7 @@ def visitWeiboContent(userId):
         f.write("时间:"+pretime[k]+'\n')
         f.write("内容:"+content[k]+'\n')
     f.close()
-        
+       
 if __name__ == '__main__':
     param = {}
     param['username'] = input('请输入账号:')   # 输入微博账号
